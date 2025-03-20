@@ -1,0 +1,203 @@
+1. insa테이블에서 ssn 컬럼을 통해서 year, month, date, gender 출력
+(1)
+SELECT ssn,  
+    SELECT ssn,
+    SUBSTR(ssn, 1, 2) YEAR,
+    SUBSTR(ssn, 3, 2) MONTH,
+    SUBSTR(ssn, 5, 2) "DATE",
+    SUBSTR(snn, 8, 1) "GENDER"  
+FROM insa;
+(2)    
+SELECT ssn,
+    SUBSTR(ssn, 1, 2) YEAR,
+    TO_CHAR(TO_DATE(SUBSTR(ssn, 1, 6)), 'MM') MONTH,
+    TO_CHAR(TO_DATE(SUBSTR(ssn, 1, 6)), 'MON') MONTH,
+    EXTRACT (MONTH FROM TO_DATE(SUBSTR(ssn, 1, 6) ))MONTH,
+    EXTRACT (DAY FROM TO_DATE(SUBSTR(ssn, 1, 6) ))"DATE",
+    SUBSTR(ssn, -7, 1) "GENDER"
+FROM insa; 
+    
+    [실행 결과]
+      SSN          YEAR MONTH DATE GENDER  
+    ---------- ------ ---- ----- -----
+    771212-1022432   77   12   12   1
+    801007-1544236   80   10   07   1
+    770922-2312547   77   09   22   2
+    790304-1788896   79   03   04   1
+    811112-1566789   81   11   12   1
+    :
+    60개 행이 선택되었습니다. 
+
+2. insa 테이블에서 70년대 12월생 모든 사원 아래와 같이 주민등록번호로 정렬해서 출력하세요.
+(1)
+SELECT name ssn FROM insa
+WHERE
+    SUBSTR(ssn, 1, 2) BETWEEN '70' AND '79'  -- 70년대생 (70년부터 79년까지)
+    AND SUBSTR(ssn, 3, 2) = '12'           -- 12월생
+ORDER BY ssn;
+
+(2)
+SELECT name, ssn
+FROM insa
+WHERE ssn LIKE '7_12%' --% _
+ORDER BY ssn ASC;
+
+(3)
+SELECT name, ssn
+FROM insa
+--WHERE REGEXP_LIKE(ssn, '^[0-9]12') -- REGEXP_LIKE() 함수 사용
+--WHERE REGEXP_LIKE(ssn, '^7.12') -- REGEXP_LIKE() 함수 사용
+WHERE REGEXP_LIKE(ssn, '^7\d12') -- REGEXP_LIKE() 함수 사용
+
+    NAME                 SSN           
+    -------------------- --------------
+    문길수               721217-1951357
+    김인수               731211-1214576
+    홍길동               771212-1022432   
+
+3. insa 테이블에서 70년대 남자 사원만 조회.    
+    ㄱ. LIKE 연산자 사용.
+SELECT * FROM insa
+--WHERE ssn LIKE '7%' AND ssn LIKE '%-1%';
+WHERE ssn LIKE '7%'
+AND (SUBSTR(ssn, 8, 1) = 1);
+    
+    ㄴ. REGEXP_LIKE() 함수 사용   
+SELECT * FROM insa 
+WHERE REGEXP_LIKE(ssn, '^7[0-9]{6}[1]');
+WHERE REGEXP_LIKE(ssn, '^7\d{5}-[13579]');
+--WHERE REGEXP_LIKE(ssn, '^7\d{5}-');
+
+4. emp 테이블에서 사원명(ename) 속에  'la' 문자열을 포함하는 사원 정보를 조회(출력)
+   (조건 : 'la'문자는 대소문자를 구분하지 않는다.    la   La  lA  LA )
+SELECT * FROM emp
+WHERE REGEXP_LIKE (ename, 'la', 'i'); (기억)
+WHERE REGEXP_LIKE(ename, 'la','i'); --REGEXP_LIKE() 함수
+WHERE LOWER(ename) LIKE '%la%'
+    OR ename LIKE '%La%'
+    OR ename LIKE '%lA%'
+    OR ename LIKE '%LA%';   -- LIKE 연산자
+
+   
+5.insa 테이블에서 남자는 'X', 여자는 'O' 로 성별(gender) 출력하는 쿼리 작성   
+    
+select name, ssn, replace(replace(substr(ssn, 8, 1), '1', 'X'), '2', 'O') "GENDER"
+from insa;
+
+SELECT name, ssn
+        ,SUBSTR(ssn, -7, 1) gender
+--        if(g == 1) X
+--        else
+--        ,NVL2(REPLACE(ssn, 8, 1), '1', null), 'O', 'X') gender
+        ,NULLIF(SUBSTR(ssm, 8,1)'1'), 'O', 'X') gender
+--        CASE문, DECODE 문 사용 가능
+FROM insa;
+
+-- NULLIF() 함수 설명
+SELECT NULLIF(1,1), NULLIF(1,2)
+FROM dual;
+
+    NAME                 SSN            GENDER
+    -------------------- -------------- ------
+    홍길동               771212-1022432    X
+    이순신               801007-1544236    X
+    이순애               770922-2312547    O
+    김정훈               790304-1788896    X
+    한석봉               811112-1566789    X 
+    :
+ 
+6. insa 테이블에서 2000년 이후 입사자 정보 조회하는 쿼리 작성
+    ㄱ. TO_CHAR() 함수 사용해서 풀기
+    SELECT name, ibsadate FROM insa
+    WHERE TO_CHAR(ibsadate,'YYYY') >= '2000';
+    
+    ㄴ. EXTRACT() 함수 사용해서 풀기.
+    SELECT name, ibsadate FROM insa
+    WHERE EXTRACT(YEAR FROM ibsadate) >= 2000;
+    
+    NAME                 IBSADATE
+    -------------------- --------
+    이미성               00/04/07
+    심심해               00/05/05
+    권영미               00/06/04
+    유관순               00/07/07   
+
+7. 현재 시스템의 날짜 출력하는 쿼리를 작성하세요. 
+    SELECT SYSDATE, CURRENT_TIMESTAMP
+    FROM dual;
+    
+    SELECT ( ㄱ   DATE    ), ( ㄴ    SYSDate      ) 
+    FROM dual;
+    
+    -- SYSDATE  년, 월, 일     요일/시간/분/처 TO_CHAR() 함수 사용
+    SELECT TO_CHAR(SYSDATE, 'YYYY-MM-DD DAY HH24:MI:SS') AS formatted_date
+    FROM dual;
+
+    
+8. dept 테이블에서 10번 부서명을 확인하고
+   부서명을 'QC100%'로 수정하고 
+   LIKE 연산자를 사용해서 100%가 포함된 부서를 검색하는 쿼리를 작성하세요. 
+   그리고 마지막엔 ROLLBACK 하세요.
+   
+   SELECT dname
+FROM dept   -- 모든 레코드 삭제
+WHERE deptno = 10;
+--DML : UPDATE
+UPDATE dept
+SET dname = 'QC100';
+WHERE deptno 10;
+-- 검색 : 부서명에 '100' 포함된 부서정보를 조회... (LIKE 연산자 사용)
+SELECT *
+FROM dept
+REGEXP_LIKE(dname, '100%');--REGEXP_LIKE 함수 사용
+--WHERE dname LIKE '%\%%'ESCAPE '\' ;
+--WHERE dname LIKE '%100\%%'ESCAPE '\';
+
+ROLLBACK;
+   
+9. TBL_TEST 테이블에서 email 컬럼의   .co.kr 을   .com 으로 변경해서 출력하는 쿼리를 작성하세요.
+실행결과)
+
+SELECT email
+--        ,REPLACE(email, '.co.kr → .com'. '.com')
+        ,ERGEXP_REPLACE(email,'(.+).co.kr$', '.com')  
+FROM tbl_test;
+
+    EMAIL               EMAIL CHANGE
+--------------------------------------------------------------------------------
+http://arirang.co.kr	http://arirang.com
+http://seoul.co.kr	    http://seoul.com
+http://home.co.kr	    http://home.com
+
+10. 오늘날짜의 년,월,일, 요일을 출력하는 쿼리를 작성하세요. 
+
+
+
+11. emp 테이블에서 아래와 같이 출력하는 쿼리를 작성하세요. 
+   ㄱ. deptno 오름차순 정렬 후 pay 로 내림차순 정렬
+   ㄴ. pay가 100 단위로 # 출력
+   ㄷ. pay = sal + comm
+   
+   SELECT deptno
+,ename || '(' || pay ||')' "ENAME (PAY)"
+--REGEXP_REPLACE(ename||pay, '([A-Z])(\d+)', '\1(\2)')
+, RPAD(' ', ROUND(pay/100)+1, '#') bar
+FROM temp
+ORDER BY deptno, pay DESC;
+   
+   실행결과)
+DEPTNO ENAME(PAY) BAR
+--- ------------ -------------------------------------------------------------
+10	KING(5000)	 ##################################################
+10	CLARK(2450)	 #########################
+10	MILLER(1300) #############
+20	FORD(3000)	 ##############################
+20	JONES(2975)	 ##############################
+20	SMITH(800)	 ########
+30	BLAKE(2850)	 #############################
+30	MARTIN(2650) ###########################
+30	ALLEN(1900)	 ###################
+30	WARD(1750)	 ##################
+30	TURNER(1500) ###############
+30	JAMES(950)	 ##########
+    
