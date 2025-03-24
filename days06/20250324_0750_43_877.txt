@@ -1,0 +1,18 @@
+1. emp , dept 테이블을 조인(join)하여 아래와 같이 출력하세요. 
+     EMPNO ENAME      HIREDATE DNAME         
+---------- ---------- -------- --------------
+      7839 KING       81/11/17 ACCOUNTING    
+      7782 CLARK      81/06/09 ACCOUNTING    
+      7934 MILLER     82/01/23 ACCOUNTING    
+      7902 FORD       81/12/03 RESEARCH      
+      7369 SMITH      80/12/17 RESEARCH      
+      7566 JONES      81/04/02 RESEARCH      
+      7900 JAMES      81/12/03 SALES         
+      7844 TURNER     81/09/08 SALES         
+      7654 MARTIN     81/09/28 SALES         
+      7521 WARD       81/02/22 SALES         
+      7499 ALLEN      81/02/20 SALES    
+      7698 BLAKE      81/05/01 SALES    
+
+2.   emp 테이블에서 job의 갯수 조회 ? 
+2-2. emp 테이블의 각 부서별 사원수 조회 ?     
