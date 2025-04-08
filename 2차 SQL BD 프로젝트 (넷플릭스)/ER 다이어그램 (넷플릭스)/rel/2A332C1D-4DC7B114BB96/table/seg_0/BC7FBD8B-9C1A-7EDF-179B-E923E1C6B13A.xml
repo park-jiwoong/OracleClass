@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC7FBD8B-9C1A-7EDF-179B-E923E1C6B13A" schemaObject="9B46183B-C134-1DB5-6F78-F970C8CF1A80" name="ACCOUNT">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>ACCOUNT</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ACCOUNTID" id="B52E21E2-C22D-D8C7-7078-EA1EBB147C47">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>ACCOUNTID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="83CBA926-6645-D2C9-8D48-B37387E79924">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONENUMBER" id="C6F11754-51E3-C1FB-2DA7-5B080BBA4550">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>PHONENUMBER</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PW" id="A0A19D38-8455-1FE8-4A50-D8178658A15C">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>PW</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENDER" id="DA794D0C-961C-A06A-56C4-FBFEADD4A81D">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>GENDER</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROFILEPW" id="835F8130-826B-6E09-D2CE-F2EBF490F31F">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>PROFILEPW</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADULTVERIFICATION" id="CDA966D0-F333-6ABD-E77A-C837FF31FDE2">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>ADULTVERIFICATION</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B8030CC-B3B7-D854-3F07-6D50FE7C542D" name="PK_ACCOUNT">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>PK_ACCOUNT</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B52E21E2-C22D-D8C7-7078-EA1EBB147C47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF4391B6-B3CA-233F-0005-F961687B4881" schemaObject="9B46183B-C134-1DB5-6F78-F970C8CF1A80" name="PK_ACCOUNT">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>PK_ACCOUNT</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B52E21E2-C22D-D8C7-7078-EA1EBB147C47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7915FB15-3CDB-93D4-6B2B-DDD9CE7E8469" containerWithKeyObject="3409D700-538F-9334-5F35-8AAA7A9E5473" localFKIndex="87482D9C-188E-0C51-4B83-02BDD7D78FA7" name="FK_AUDIOTRACK_TO_AUDIOLANG">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>FK_AUDIOTRACK_TO_AUDIOLANG</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<referredTableLongName>NETFLIX.AUDIOTRACK</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>63632D44-EA88-5418-4F93-E46261B2C6F9</referredTableID>
+<keyObject>FAAB1021-E85A-C3C6-D93C-5D39F3AAD53B</keyObject>
+<referredKeyID>FAAB1021-E85A-C3C6-D93C-5D39F3AAD53B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>AUDIOTRACKID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="VIDEO" directorySegmentName="seg_0" id="5395BE50-EA11-4B55-A554-ACB1FBE10BAA">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<schemaObject>9B46183B-C134-1DB5-6F78-F970C8CF1A80</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>F99E02E9-7EEF-2618-1FD4-E88D145AED8C</segment>
+<tableSpace>3FE0C503-39DF-1C6B-A91A-4B78AE8581DB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EPITITLE" id="12CD9ACF-10AB-FB7C-1D65-A29400902D79">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EPIRUNTIME" id="34D9D451-A480-1D3A-9EF9-83213EE7B962">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VIDEOID" id="5CD2CBF2-6380-3DCD-AC72-000BA4A01512">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTENTID" id="7C106F28-9A13-B922-BEBE-A3174767E070">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RELEASEDATE" id="7FC81BDF-59EA-2D92-AF24-94EBCAC1EF96">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEASONNUM" id="989B5914-627D-E0B3-D21C-4DA8D01EFF3C">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EPIIMAGEURL" id="9B2326F5-9B8A-78CB-E3EF-5ABA25DE349C">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EPINUM" id="A4B9DE9A-911E-3534-1F0B-584E781ADAEF">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUDIOLANGID" id="A6AFB41E-854C-D780-FC24-6D0484A2813A">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EPIDESCRIPTION" id="E8E4BC31-61C6-849F-608E-8CD2A7B3A840">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_VIDEO" id="23BC1E13-C020-EA94-83EA-5E0FBDD9D2F1">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<schemaObject>9B46183B-C134-1DB5-6F78-F970C8CF1A80</schemaObject>
+<segment>800C0D82-7F86-77DF-1489-B474885C56CB</segment>
+<tableSpace>3FE0C503-39DF-1C6B-A91A-4B78AE8581DB</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AUDIOLANG_TO_VIDEO" id="713030B5-EF87-25FB-4AD3-2DD7CA9F8DEA">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CONTENT_TO_VIDEO" id="9BCD3D93-BEAB-B57A-407A-D3CB8B36C41C">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_VIDEO" id="37B3C4DA-1569-C04D-B42B-6FD4BDDA7D78">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<segment>800C0D82-7F86-77DF-1489-B474885C56CB</segment>
+<tableSpace>3FE0C503-39DF-1C6B-A91A-4B78AE8581DB</tableSpace>
+<existingIndex>23BC1E13-C020-EA94-83EA-5E0FBDD9D2F1</existingIndex>
+<indexSegment>800C0D82-7F86-77DF-1489-B474885C56CB</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

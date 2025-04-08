@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="01557E4A-13F3-3255-466E-70AEFEB22F37" schemaObject="9B46183B-C134-1DB5-6F78-F970C8CF1A80" name="TRAILER">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>TRAILER</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TRAILERID" id="5082A79F-C481-8517-BD9E-25629CF58B10">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>TRAILER</sourceObjSchema>
+<sourceObjName>TRAILERID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRAILERURL" id="6682BB80-296D-3D7C-40DF-F0D41B2F4244">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>TRAILER</sourceObjSchema>
+<sourceObjName>TRAILERURL</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITLE" id="FAA17352-E53B-54C8-FA4B-FCF189ED83EA">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>TRAILER</sourceObjSchema>
+<sourceObjName>TITLE</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VIDEOID" id="1AA173CC-099B-60D7-DE5A-645FB94C8623">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>TRAILER</sourceObjSchema>
+<sourceObjName>VIDEOID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF3F2F2C-8CDE-28C2-38E8-5E4442F0FD0A" referredColumn="5CD2CBF2-6380-3DCD-AC72-000BA4A01512"/>
+</associations>
+</Column>
+<Column name="AUDIOLANGID" id="D383E5D5-F618-42E9-A5FC-671B9CD7EFB7">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>TRAILER</sourceObjSchema>
+<sourceObjName>AUDIOLANGID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACD780BB-501F-9EB6-A49E-A1D659C4638A" referredColumn="DE0C4D76-A944-2DC6-05B9-562BB03B2E43"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0E66012E-85ED-4CC3-EE01-D3EDB0AE8236" name="PK_TRAILER">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>PK_TRAILER</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5082A79F-C481-8517-BD9E-25629CF58B10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="616A8504-BB98-A991-86BF-5F6C20612933" schemaObject="9B46183B-C134-1DB5-6F78-F970C8CF1A80" name="PK_TRAILER">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>PK_TRAILER</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5082A79F-C481-8517-BD9E-25629CF58B10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B941303-C88A-A6D1-B6FE-E59F78F710B7" name="FK_AUDIOLANG_TO_TRAILER">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D383E5D5-F618-42E9-A5FC-671B9CD7EFB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0EE6A8F2-BAC1-AB9E-CC2B-58C389C5A2D2" name="FK_VIDEO_TO_TRAILER">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AA173CC-099B-60D7-DE5A-645FB94C8623"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

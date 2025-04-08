@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7A9E9036-CD15-9242-59A2-5E2126A443BB" containerWithKeyObject="F09B7FF4-1B75-5063-5E84-B4D04F5BB74B" localFKIndex="D377929F-51D5-515E-3EB0-9CFC380F7B9B" name="FK_FEATURE_TO_FEATURELIST">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>FK_FEATURE_TO_FEATURELIST</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<referredTableLongName>NETFLIX.FEATURE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A693133C-289C-6EBE-DACA-E6F21B7A8338</referredTableID>
+<keyObject>78505162-78C1-44A1-B13B-1CC474FBB897</keyObject>
+<referredKeyID>78505162-78C1-44A1-B13B-1CC474FBB897</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>FEATUREID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C4AC5146-03AF-B304-A07E-9503194B97B9" containerWithKeyObject="BFA642A0-B09C-897C-B5B9-D6C5DA2D3879" localFKIndex="ABF5E98A-7035-374C-718F-6D396A41475F" name="FK_MEMBERSHIP_TO_PAYMENT">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>FK_MEMBERSHIP_TO_PAYMENT</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<referredTableLongName>NETFLIX.MEMBERSHIP</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5E2CA669-BA5C-C079-D1A9-81EAD068E461</referredTableID>
+<keyObject>BDF6333F-60C9-84B4-66E8-F8BB3015E1BA</keyObject>
+<referredKeyID>BDF6333F-60C9-84B4-66E8-F8BB3015E1BA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MEMBERSHIPID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

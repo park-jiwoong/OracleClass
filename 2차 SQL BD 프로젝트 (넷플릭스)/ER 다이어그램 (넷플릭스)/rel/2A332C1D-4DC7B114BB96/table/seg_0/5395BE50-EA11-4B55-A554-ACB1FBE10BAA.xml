@@ -1,0 +1,218 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5395BE50-EA11-4B55-A554-ACB1FBE10BAA" schemaObject="9B46183B-C134-1DB5-6F78-F970C8CF1A80" name="VIDEO">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>VIDEO</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VIDEOID" id="5CD2CBF2-6380-3DCD-AC72-000BA4A01512">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>VIDEO</sourceObjSchema>
+<sourceObjName>VIDEOID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEASONNUM" id="989B5914-627D-E0B3-D21C-4DA8D01EFF3C">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>VIDEO</sourceObjSchema>
+<sourceObjName>SEASONNUM</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EPINUM" id="A4B9DE9A-911E-3534-1F0B-584E781ADAEF">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>VIDEO</sourceObjSchema>
+<sourceObjName>EPINUM</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EPITITLE" id="12CD9ACF-10AB-FB7C-1D65-A29400902D79">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>VIDEO</sourceObjSchema>
+<sourceObjName>EPITITLE</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EPIDESCRIPTION" id="E8E4BC31-61C6-849F-608E-8CD2A7B3A840">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>VIDEO</sourceObjSchema>
+<sourceObjName>EPIDESCRIPTION</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EPIRUNTIME" id="34D9D451-A480-1D3A-9EF9-83213EE7B962">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>VIDEO</sourceObjSchema>
+<sourceObjName>EPIRUNTIME</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EPIIMAGEURL" id="9B2326F5-9B8A-78CB-E3EF-5ABA25DE349C">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>VIDEO</sourceObjSchema>
+<sourceObjName>EPIIMAGEURL</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RELEASEDATE" id="7FC81BDF-59EA-2D92-AF24-94EBCAC1EF96">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>VIDEO</sourceObjSchema>
+<sourceObjName>RELEASEDATE</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTENTID" id="7C106F28-9A13-B922-BEBE-A3174767E070">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>VIDEO</sourceObjSchema>
+<sourceObjName>CONTENTID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="460D7AD6-12E7-1DD6-E473-0F03D3AC7251" referredColumn="26C9F838-EF9E-ED41-D563-D06EC8A23FAA"/>
+</associations>
+</Column>
+<Column name="AUDIOLANGID" id="A6AFB41E-854C-D780-FC24-6D0484A2813A">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>VIDEO</sourceObjSchema>
+<sourceObjName>AUDIOLANGID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E293E727-F9EF-19E6-0815-D005AAC8975A" referredColumn="DE0C4D76-A944-2DC6-05B9-562BB03B2E43"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37B3C4DA-1569-C04D-B42B-6FD4BDDA7D78" name="PK_VIDEO">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>PK_VIDEO</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CD2CBF2-6380-3DCD-AC72-000BA4A01512"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23BC1E13-C020-EA94-83EA-5E0FBDD9D2F1" schemaObject="9B46183B-C134-1DB5-6F78-F970C8CF1A80" name="PK_VIDEO">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>PK_VIDEO</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CD2CBF2-6380-3DCD-AC72-000BA4A01512"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="713030B5-EF87-25FB-4AD3-2DD7CA9F8DEA" name="FK_AUDIOLANG_TO_VIDEO">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6AFB41E-854C-D780-FC24-6D0484A2813A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9BCD3D93-BEAB-B57A-407A-D3CB8B36C41C" name="FK_CONTENT_TO_VIDEO">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C106F28-9A13-B922-BEBE-A3174767E070"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

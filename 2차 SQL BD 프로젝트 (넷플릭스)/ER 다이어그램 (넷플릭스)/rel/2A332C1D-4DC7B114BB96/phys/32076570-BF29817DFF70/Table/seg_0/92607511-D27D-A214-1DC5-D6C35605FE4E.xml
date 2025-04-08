@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="VIEWINGHISTORY" directorySegmentName="seg_0" id="92607511-D27D-A214-1DC5-D6C35605FE4E">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<schemaObject>9B46183B-C134-1DB5-6F78-F970C8CF1A80</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>F99E02E9-7EEF-2618-1FD4-E88D145AED8C</segment>
+<tableSpace>3FE0C503-39DF-1C6B-A91A-4B78AE8581DB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="LASTVIEWAT" id="0BBC2177-6413-731D-FD77-A03A70FF9302">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VIEWINGHISTORYID" id="32150120-D82F-50DF-C7C3-F0588C82B648">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROFILEID" id="5BAB8E60-B4E2-38A0-828B-BCC1CDF0A5BB">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VIDEOID" id="7D97784D-1686-1350-7B7D-9161212272F5">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TOTALVIEWINGTIME" id="A0EF436E-F9FA-865D-9A26-2790CB29DFCA">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ISCOMPLETED" id="A35E88C3-B972-26CE-8978-8C9E74EE5F07">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_VIEWINGHISTORY" id="7FFAA1F7-9328-A09B-50AD-4C589D388033">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<schemaObject>9B46183B-C134-1DB5-6F78-F970C8CF1A80</schemaObject>
+<segment>800C0D82-7F86-77DF-1489-B474885C56CB</segment>
+<tableSpace>3FE0C503-39DF-1C6B-A91A-4B78AE8581DB</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PROFILE_TO_VIEWINGHISTORY" id="D384CAC2-5054-E083-AFBB-D0349BA5D2D5">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_VIDEO_TO_VIEWINGHISTORY" id="E72DA48F-EF6D-30A0-EBD6-E364ED9B4BF3">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_VIEWINGHISTORY" id="BB11BBDA-38A2-F585-37B4-CB97D390D3FB">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<segment>800C0D82-7F86-77DF-1489-B474885C56CB</segment>
+<tableSpace>3FE0C503-39DF-1C6B-A91A-4B78AE8581DB</tableSpace>
+<existingIndex>7FFAA1F7-9328-A09B-50AD-4C589D388033</existingIndex>
+<indexSegment>800C0D82-7F86-77DF-1489-B474885C56CB</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

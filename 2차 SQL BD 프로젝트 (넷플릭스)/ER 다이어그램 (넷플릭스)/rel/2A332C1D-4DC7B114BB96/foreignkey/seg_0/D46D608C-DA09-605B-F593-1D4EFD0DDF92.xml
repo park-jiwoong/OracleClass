@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D46D608C-DA09-605B-F593-1D4EFD0DDF92" containerWithKeyObject="E9F781B9-311F-C04F-B325-D5AAE8AE053C" localFKIndex="4438ACB3-5F8F-0EF4-4E1D-CBAF89F18295" name="FK_GENRE_TO_GENRELIST">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>FK_GENRE_TO_GENRELIST</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<referredTableLongName>NETFLIX.GENRE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A660BEF4-8D39-8B59-7D01-1FF97D4206BA</referredTableID>
+<keyObject>9FCE33E7-DD0D-E66C-12A8-EB6BB86DB657</keyObject>
+<referredKeyID>9FCE33E7-DD0D-E66C-12A8-EB6BB86DB657</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>GENREID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

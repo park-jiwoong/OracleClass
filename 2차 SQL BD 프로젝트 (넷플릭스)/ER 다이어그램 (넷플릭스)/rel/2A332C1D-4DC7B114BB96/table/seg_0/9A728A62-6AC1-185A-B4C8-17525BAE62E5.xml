@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A728A62-6AC1-185A-B4C8-17525BAE62E5" schemaObject="9B46183B-C134-1DB5-6F78-F970C8CF1A80" name="WISHLIST">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>WISHLIST</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="WISHLISTID" id="890465A5-6278-44C6-3F43-1828B9EE410C">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>WISHLIST</sourceObjSchema>
+<sourceObjName>WISHLISTID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROFILEID" id="CA22392F-765F-239A-72F5-685D16C4AC3D">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>WISHLIST</sourceObjSchema>
+<sourceObjName>PROFILEID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD79E96C-A25C-95CD-D9D3-F64CF50C46C8" referredColumn="4054FAAA-3418-24F7-6563-C8C0F9AB68E9"/>
+</associations>
+</Column>
+<Column name="VIDEOID2" id="91104109-D09A-88D0-4C4A-6A3142EDBF49">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>WISHLIST</sourceObjSchema>
+<sourceObjName>VIDEOID2</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83C0A5E1-6576-2E4B-2105-816B403DE8EC" referredColumn="5CD2CBF2-6380-3DCD-AC72-000BA4A01512"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B14F52C8-E6FA-9443-21FC-FD32D270468C" name="PK_WISHLIST">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>PK_WISHLIST</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="890465A5-6278-44C6-3F43-1828B9EE410C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BE4D0C9-DDEF-2CC9-A6C1-6E6EA5C02E45" schemaObject="9B46183B-C134-1DB5-6F78-F970C8CF1A80" name="PK_WISHLIST">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>PK_WISHLIST</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="890465A5-6278-44C6-3F43-1828B9EE410C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="955A766C-8FEE-D764-C069-96399D6A8C68" name="FK_PROFILE_TO_WISHLIST">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA22392F-765F-239A-72F5-685D16C4AC3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26EB59B3-A372-7E42-2B9D-9DEDB7ADBE36" name="FK_VIDEO_TO_WISHLIST">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91104109-D09A-88D0-4C4A-6A3142EDBF49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

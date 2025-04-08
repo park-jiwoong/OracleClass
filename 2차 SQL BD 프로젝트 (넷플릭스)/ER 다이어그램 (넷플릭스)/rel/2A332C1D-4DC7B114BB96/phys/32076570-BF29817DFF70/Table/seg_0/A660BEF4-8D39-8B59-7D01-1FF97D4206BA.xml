@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="GENRE" directorySegmentName="seg_0" id="A660BEF4-8D39-8B59-7D01-1FF97D4206BA">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<schemaObject>9B46183B-C134-1DB5-6F78-F970C8CF1A80</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>F99E02E9-7EEF-2618-1FD4-E88D145AED8C</segment>
+<tableSpace>3FE0C503-39DF-1C6B-A91A-4B78AE8581DB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="GENRENAME" id="3639E17E-2B89-17DA-05D0-9F774170E986">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GENREID" id="BC61679F-8B54-6988-A4ED-91C9287FDC76">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_GENRE" id="B1B360B3-6692-0B0B-2B2F-A2681B16B986">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<schemaObject>9B46183B-C134-1DB5-6F78-F970C8CF1A80</schemaObject>
+<segment>800C0D82-7F86-77DF-1489-B474885C56CB</segment>
+<tableSpace>3FE0C503-39DF-1C6B-A91A-4B78AE8581DB</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_GENRE" id="9FCE33E7-DD0D-E66C-12A8-EB6BB86DB657">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<segment>800C0D82-7F86-77DF-1489-B474885C56CB</segment>
+<tableSpace>3FE0C503-39DF-1C6B-A91A-4B78AE8581DB</tableSpace>
+<existingIndex>B1B360B3-6692-0B0B-2B2F-A2681B16B986</existingIndex>
+<indexSegment>800C0D82-7F86-77DF-1489-B474885C56CB</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

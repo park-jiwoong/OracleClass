@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="46D9124F-C768-F147-0967-E85307DBB243" containerWithKeyObject="7968DB42-4C66-4953-FAC3-22D451EF97F3" localFKIndex="F88CF7A8-630A-42A7-A5F0-185F3F80C89C" name="FK_COUNTRY_TO_PROFILE">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>FK_COUNTRY_TO_PROFILE</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<referredTableLongName>NETFLIX.COUNTRY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4C3F3E0C-7747-AC56-FDBD-75380EC0866A</referredTableID>
+<keyObject>20F25A90-0843-81AD-0F3D-2A9910F2971A</keyObject>
+<referredKeyID>20F25A90-0843-81AD-0F3D-2A9910F2971A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>COUNTRYID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

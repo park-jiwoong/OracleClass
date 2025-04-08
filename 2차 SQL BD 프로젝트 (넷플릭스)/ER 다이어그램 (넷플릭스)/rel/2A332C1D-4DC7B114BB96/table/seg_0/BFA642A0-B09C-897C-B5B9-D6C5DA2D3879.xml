@@ -1,0 +1,170 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFA642A0-B09C-897C-B5B9-D6C5DA2D3879" schemaObject="9B46183B-C134-1DB5-6F78-F970C8CF1A80" name="PAYMENT">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>PAYMENT</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PAYMENTTYPE" id="516136A4-E651-9ABA-2DA9-EFFD12A5103B">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>PAYMENTTYPE</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYDATE" id="ADA68927-C589-E3C3-3CFF-8A00684CEDF8">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>PAYDATE</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMETHOD" id="094E3672-7DC6-5ECE-20F3-1640CE505C9E">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>PAYMETHOD</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYAMOUNT" id="9AEB3735-E8E0-69F8-BFFC-C6E354A1EFA6">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>PAYAMOUNT</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USEPERIOD" id="29944F1E-B1F5-9073-988E-8190FC4B237B">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>USEPERIOD</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEMBERSHIPID" id="3C4AC62E-CEC9-665A-7BFA-6DA0D354BAF1">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>MEMBERSHIPID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4AC5146-03AF-B304-A07E-9503194B97B9" referredColumn="3DB69AD2-62D4-7C92-C028-A95E90CE1A45"/>
+</associations>
+</Column>
+<Column name="ACCOUNTID" id="BCE053B1-81BB-FC48-68F1-60EC2A9E5CE8">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>ACCOUNTID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B7303D5-0089-79BE-CA74-1682F25409B7" referredColumn="B52E21E2-C22D-D8C7-7078-EA1EBB147C47"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1F94A41F-7EAF-6598-362A-31E1E56EC115" name="PK_PAYMENT">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>PK_PAYMENT</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="516136A4-E651-9ABA-2DA9-EFFD12A5103B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77D8E538-9980-E166-7D0A-A57B0311FB0F" schemaObject="9B46183B-C134-1DB5-6F78-F970C8CF1A80" name="PK_PAYMENT">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>PK_PAYMENT</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="516136A4-E651-9ABA-2DA9-EFFD12A5103B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78F2F6A7-AB0F-5DB4-AF72-3D68F655C7AE" name="FK_ACCOUNT_TO_PAYMENT">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCE053B1-81BB-FC48-68F1-60EC2A9E5CE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ABF5E98A-7035-374C-718F-6D396A41475F" name="FK_MEMBERSHIP_TO_PAYMENT">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C4AC62E-CEC9-665A-7BFA-6DA0D354BAF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

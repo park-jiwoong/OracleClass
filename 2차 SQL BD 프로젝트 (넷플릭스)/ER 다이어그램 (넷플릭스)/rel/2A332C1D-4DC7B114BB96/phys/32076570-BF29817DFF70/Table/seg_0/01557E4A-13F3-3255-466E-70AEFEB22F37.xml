@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="TRAILER" directorySegmentName="seg_0" id="01557E4A-13F3-3255-466E-70AEFEB22F37">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<schemaObject>9B46183B-C134-1DB5-6F78-F970C8CF1A80</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>F99E02E9-7EEF-2618-1FD4-E88D145AED8C</segment>
+<tableSpace>3FE0C503-39DF-1C6B-A91A-4B78AE8581DB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="VIDEOID" id="1AA173CC-099B-60D7-DE5A-645FB94C8623">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TRAILERID" id="5082A79F-C481-8517-BD9E-25629CF58B10">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TRAILERURL" id="6682BB80-296D-3D7C-40DF-F0D41B2F4244">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUDIOLANGID" id="D383E5D5-F618-42E9-A5FC-671B9CD7EFB7">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TITLE" id="FAA17352-E53B-54C8-FA4B-FCF189ED83EA">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_TRAILER" id="616A8504-BB98-A991-86BF-5F6C20612933">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<schemaObject>9B46183B-C134-1DB5-6F78-F970C8CF1A80</schemaObject>
+<segment>800C0D82-7F86-77DF-1489-B474885C56CB</segment>
+<tableSpace>3FE0C503-39DF-1C6B-A91A-4B78AE8581DB</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_VIDEO_TO_TRAILER" id="0EE6A8F2-BAC1-AB9E-CC2B-58C389C5A2D2">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AUDIOLANG_TO_TRAILER" id="2B941303-C88A-A6D1-B6FE-E59F78F710B7">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_TRAILER" id="0E66012E-85ED-4CC3-EE01-D3EDB0AE8236">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<segment>800C0D82-7F86-77DF-1489-B474885C56CB</segment>
+<tableSpace>3FE0C503-39DF-1C6B-A91A-4B78AE8581DB</tableSpace>
+<existingIndex>616A8504-BB98-A991-86BF-5F6C20612933</existingIndex>
+<indexSegment>800C0D82-7F86-77DF-1489-B474885C56CB</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

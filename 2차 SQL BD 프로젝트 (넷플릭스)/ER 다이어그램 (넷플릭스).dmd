@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ER 다이어그램 (넷플릭스)" id="F8FA82D9-D045-0D5C-00B1-F6DB0F7AFB29" version="3.5">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:12:55 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>F8FA82D9-D045-0D5C-00B1-F6DB0F7AFB29</designId>
+</OSDM_Design>

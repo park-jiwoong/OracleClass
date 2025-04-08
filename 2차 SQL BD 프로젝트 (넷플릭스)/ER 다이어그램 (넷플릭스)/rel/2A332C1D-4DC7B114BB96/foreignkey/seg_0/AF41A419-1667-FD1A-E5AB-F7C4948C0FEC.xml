@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AF41A419-1667-FD1A-E5AB-F7C4948C0FEC" containerWithKeyObject="EDB75E89-54B0-44C2-1206-0911012E4943" localFKIndex="C32DEE02-06C0-9605-2A85-1CC1F440E8AB" name="FK_SUBTITLESETTING_TO_SUBTITLE">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>FK_SUBTITLESETTING_TO_SUBTITLE</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<referredTableLongName>NETFLIX.SUBTITLESETTING</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8ABF915C-DD10-5C10-C113-9F9754B07703</referredTableID>
+<keyObject>B56AC610-7DC8-CFF1-D6DA-AFA9CC61BE0F</keyObject>
+<referredKeyID>B56AC610-7DC8-CFF1-D6DA-AFA9CC61BE0F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SUBTITLESETTINGID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3409D700-538F-9334-5F35-8AAA7A9E5473" schemaObject="9B46183B-C134-1DB5-6F78-F970C8CF1A80" name="AUDIOLANG">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>AUDIOLANG</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AUDIOLANGID" id="DE0C4D76-A944-2DC6-05B9-562BB03B2E43">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>AUDIOLANG</sourceObjSchema>
+<sourceObjName>AUDIOLANGID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LANGUAGE" id="15215096-4611-A713-C657-63ECD8A471C5">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>AUDIOLANG</sourceObjSchema>
+<sourceObjName>LANGUAGE</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUDIOTRACKID" id="74E82383-E851-5F54-E79C-4D27DE084CD4">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>AUDIOLANG</sourceObjSchema>
+<sourceObjName>AUDIOTRACKID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7915FB15-3CDB-93D4-6B2B-DDD9CE7E8469" referredColumn="E1A16F49-DBF8-B1CD-7DD5-306587B2500C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1E0720C2-2F90-2BAD-D7BA-F0670508A4C0" name="PK_AUDIOLANG">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>PK_AUDIOLANG</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE0C4D76-A944-2DC6-05B9-562BB03B2E43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="643C028E-D407-54AC-5C49-7A6B882A6CA3" schemaObject="9B46183B-C134-1DB5-6F78-F970C8CF1A80" name="PK_AUDIOLANG">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>PK_AUDIOLANG</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE0C4D76-A944-2DC6-05B9-562BB03B2E43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87482D9C-188E-0C51-4B83-02BDD7D78FA7" name="FK_AUDIOTRACK_TO_AUDIOLANG">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74E82383-E851-5F54-E79C-4D27DE084CD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

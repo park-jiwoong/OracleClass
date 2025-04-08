@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="79378376-21CA-53BE-D469-FA5AE9A91D82" mainViewID="C6C13EC1-69D3-D17B-8BB4-E6ED63833EF6">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:12:55 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

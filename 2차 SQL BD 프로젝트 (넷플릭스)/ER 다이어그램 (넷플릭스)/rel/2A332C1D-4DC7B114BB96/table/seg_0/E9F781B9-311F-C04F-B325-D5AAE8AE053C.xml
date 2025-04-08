@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9F781B9-311F-C04F-B325-D5AAE8AE053C" schemaObject="9B46183B-C134-1DB5-6F78-F970C8CF1A80" name="GENRELIST">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>GENRELIST</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GENRELISTID" id="82EFC080-1A11-9440-B55A-8293AA3DA2D9">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>GENRELIST</sourceObjSchema>
+<sourceObjName>GENRELISTID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENREID" id="14CC2220-570A-FFFB-BB0E-E4EEE2E06833">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>GENRELIST</sourceObjSchema>
+<sourceObjName>GENREID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D46D608C-DA09-605B-F593-1D4EFD0DDF92" referredColumn="BC61679F-8B54-6988-A4ED-91C9287FDC76"/>
+</associations>
+</Column>
+<Column name="CONTENTID" id="D25FAD90-D049-75AE-EDBD-E3DFB0F44007">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>GENRELIST</sourceObjSchema>
+<sourceObjName>CONTENTID</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2056C6BC-BDB4-83DF-CC68-E1395A286477" referredColumn="26C9F838-EF9E-ED41-D563-D06EC8A23FAA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9FEA7B15-526A-54EB-D0C3-17D57D81A339" name="PK_GENRELIST">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>PK_GENRELIST</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82EFC080-1A11-9440-B55A-8293AA3DA2D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75CCAD7C-7C85-815B-0858-A720C10B848B" schemaObject="9B46183B-C134-1DB5-6F78-F970C8CF1A80" name="PK_GENRELIST">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjSchema>NETFLIX</sourceObjSchema>
+<sourceObjName>PK_GENRELIST</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82EFC080-1A11-9440-B55A-8293AA3DA2D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB44E1E5-B116-2188-87A7-4FD47B21DFFB" name="FK_CONTENT_TO_GENRELIST">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D25FAD90-D049-75AE-EDBD-E3DFB0F44007"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4438ACB3-5F8F-0EF4-4E1D-CBAF89F18295" name="FK_GENRE_TO_GENRELIST">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:48 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14CC2220-570A-FFFB-BB0E-E4EEE2E06833"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

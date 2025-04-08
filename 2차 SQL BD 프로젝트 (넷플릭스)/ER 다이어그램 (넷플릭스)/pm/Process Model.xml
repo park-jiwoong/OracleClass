@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="A81B8CFE-7E41-2FA9-59FF-57971D8AA4F1">
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:12:55 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="NETFLIX" directorySegmentName="seg_0" id="EF1A48FF-6314-C63E-AF8F-ED255696225C">
+<sourceConnName>NETFLIX</sourceConnName>
+<sourceObjName>NETFLIX</sourceObjName>
+<createdBy>pjw55</createdBy>
+<createdTime>2025-04-08 07:16:47 UTC</createdTime>
+<ownerDesignName>ER 다이어그램 (넷플릭스)</ownerDesignName>
+<schemaObject>9B46183B-C134-1DB5-6F78-F970C8CF1A80</schemaObject>
+</UserOraclev10g>
