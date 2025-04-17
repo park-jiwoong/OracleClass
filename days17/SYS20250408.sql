@@ -24,3 +24,14 @@ ORDER BY CASE
         END;
 
 GRANT CREATE VIEW TO SCOTT;
+
+CREATE USER netflix IDENTIFIED BY 1234;
+
+-- 테이블 생성 권한 부여
+GRANT CREATE TABLE TO netflix;
+
+-- users 테이블스페이스에 무제한 공간 사용 권한 부여
+GRANT UNLIMITED TABLESPACE TO netflix;
+
+GRANT CREATE SESSION TO netflix;
+

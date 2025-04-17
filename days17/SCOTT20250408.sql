@@ -125,7 +125,7 @@ END;
 
 -- Procedure UP_USER_EXCEPTION이(가) 컴파일되었습니다.
 
--- 4)
+-- 4)예외 trapping 함수
 CREATE OR REPLACE PROCEDURE test7
 (v_sal  IN emp.sal%TYPE)
 IS

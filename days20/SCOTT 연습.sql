@@ -70,6 +70,9 @@ BEGIN
 --EXCEPTION
 END;
 
+select *
+from emp; 
+
 
 
 
