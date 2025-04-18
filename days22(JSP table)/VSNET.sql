@@ -51,12 +51,51 @@ commit;
           END;
 
 
-select * from tbl_cstVSBoard;
-
+select * from tbl_cstVSBoard
+where seq = 1;
 ----------------------------------------------
 select seq, title, writer, email, writedate, readed
 from tbl_cstVSBoard
 ORDER BY seq DESC;
 
 COMMIT;
+----------------------------------------------
+----- 현재페이지 : 1 / 한페이지당 출력할 게시글 수 : 10
+SELECT * 
+FROM tbl_cstVSBoard
+ORDER BY seq DESC;
+-- TOP - N 방식 --
+SELECT *
+FROM (
+    SELECT ROWNUM no, t.*
+    FROM (
+        SELECT * -- 칼럼만 바꿔주자
+        FROM tbl_cstVSBoard
+        ORDER BY seq DESC;
+        )t
+)b
+WHERE no BETWEEN ? AND ?; -- ?페이지
+WHERE no BETWEEN 1 AND 10; -- 1페이지
+WHERE no BETWEEN 11 AND 20; -- 2페이지
+WHERE no BETWEEN 21 AND 30; -- 3페이지
+
+select count(*) from tbl_cstVSBoard;
+
+
+
+
+
+ SELECT * 
+ FROM (    
+   SELECT ROWNUM no, t.*     
+   FROM (        
+          SELECT *         
+          FROM tbl_cstVSBoard         
+          ORDER BY seq DESC        
+  )t 
+)b 
+WHERE no BETWEEN 51 AND 60;
+
+
+
 
